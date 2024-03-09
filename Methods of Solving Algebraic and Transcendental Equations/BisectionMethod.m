@@ -1,4 +1,4 @@
-f = @(x) sin(x) + x.^2 - 1;  % Define the function f(x) to be solved using a function handle
+f = @(x) sin(x) + x.^2 - 1;
 
 a = 0;  % Define the initial interval [a, b]
 b = 1;
@@ -17,4 +17,4 @@ while abs(b - a) > (10^(-4))  % Loop until the desired accuracy is achieved
     x0 = (b + a) / 2;  % Update the midpoint of the interval
 end
 
-fprintf("Required root is %f\n", x0);  % Print the final result
+fprintf("Required root is %f\n", x0);
