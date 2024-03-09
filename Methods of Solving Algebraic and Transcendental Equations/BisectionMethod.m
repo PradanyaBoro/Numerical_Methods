@@ -2,8 +2,7 @@ syms x 'real';
 
 f = sin(x) + x^2 - 1;
 
-% Define the initial interval [a, b]
-a = 0;
+a = 0;    % Define the initial interval [a, b]
 b = 1;
 
 % Initialize the midpoint of the interval
