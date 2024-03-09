@@ -1,6 +1,6 @@
 f = @(x) sin(x) + x.^2 - 1;
 
-a = 0;  % Define the initial interval [a, b]
+a = 0;  % Define the initial interval
 b = 1;
 
 x0 = (b + a) / 2;  % Initialize the midpoint of the interval
