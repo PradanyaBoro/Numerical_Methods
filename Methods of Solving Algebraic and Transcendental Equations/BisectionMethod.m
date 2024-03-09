@@ -1,4 +1,3 @@
-% Define the symbolic variable x as real
 syms x 'real';
 
 % Define the function f(x) to be solved symbolically
