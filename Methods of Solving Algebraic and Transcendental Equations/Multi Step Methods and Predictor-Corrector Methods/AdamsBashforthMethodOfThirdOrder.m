@@ -1,3 +1,8 @@
+clear   % Clears variables of workspace keeping functions and classes,
+        % clear all includes function and classes too
+% clc     % Clears the command window
+close all   % Closes all MATLAB figure windows
+
 % Define the function f(x, y) representing the differential equation
 f = @(x, y) 1 + (x - y)^2;
 
