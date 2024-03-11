@@ -1,8 +1,3 @@
-clear   % Clears variables of workspace keeping functions and classes,
-        % clear all includes function and classes too
-% clc     % Clears the command window
-close all   % Closes all MATLAB figure windows
-
 % Define the function f(x, y) representing the differential equation
 f = @(x, y) 1/exp(x) - y;
 
@@ -20,7 +15,7 @@ n = 8 / h;
 y(2) = y(1) + h * f(x(1), y(1));
 x(2) = x(1) + h;
 
-% Perform the remaining iterations using the 3rd order Adams-Moulton method
+% Perform the remaining iterations using the predictor-corrector method
 for i = 2:n
     x(i + 1) = x(i) + h;
     y0 = y(i) + 0.5 * h * (f(x(i), y(i)) + f(x(i) + h, y(i) + h * f(x(i), y(i))));
@@ -39,7 +34,7 @@ end
 % Print the final solution
 fprintf("y(%f) = %f \n", x(end), y(end))
 
-% Plot the results of the Adams-Moulton method
+% Plot the results of the predictor-corrector method
 plot(x, y, '-ok')
 hold on;
 
@@ -52,4 +47,4 @@ y0 = 0;
 plot(x, y, 'r')
 
 % Add legend to the plot
-legend({'Adams-Moulton Method (3rd order)', 'ODE45 Solution'})
+legend({'Predictor-Corrector Method', 'ODE45 Solution'}, 'Location', 'north')
