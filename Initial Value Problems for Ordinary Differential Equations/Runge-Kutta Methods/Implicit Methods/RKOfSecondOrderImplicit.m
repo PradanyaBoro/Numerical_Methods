@@ -7,12 +7,10 @@ syms z k
 f = @(x, y) y^2 - x;
 
 % Initial conditions
-x0 = 0;
-y0 = 1;
+y(1) = 1;
+x(1) = 0;
 h = 0.02; % Step size
-n = (1 - x0) / h; % Number of steps
-y(1) = y0;
-x(1) = x0;
+n = (1 - x(1)) / h; % Number of steps
 
 % Initialize k for the Runge-Kutta method
 k = h * f(x(1) + h / 2, y(1) + k / 2);
@@ -41,11 +39,11 @@ for i = 1:n
 
     % Update y using the implicit Runge-Kutta method
     y(i + 1) = y(i) + K1;
-    x(i + 1) = x0 + i * h;
+    x(i + 1) = x(i) + h;
 end
 
 % Print the final result
-fprintf("y(%f) = %f \n", x(i + 1), y(i + 1))
+fprintf("y(%f) = %f \n", x(end), y(end))
 
 % Plot the solution obtained from the implicit Runge-Kutta method
 plot(x, y, '-ok')
@@ -58,4 +56,4 @@ y0 = 1;
 plot(x, y, 'r')
 
 % Add legend
-legend({'Second Order Implicit Runge-Kutta Method', 'ODE45'})
+legend({'Second Order Implicit Runge-Kutta Method', 'ODE45'}, 'location', 'northwest')
