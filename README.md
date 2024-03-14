@@ -53,4 +53,4 @@ Your contributions play a crucial role in enhancing the quality and usefulness o
 This repository is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) (GPL-3.0). The GPL-3.0 license ensures that the code remains open source and freely accessible to everyone. It grants users the freedom to use, modify, and distribute the code, with the condition that any derivative works are also released under the GPL-3.0 license. See the [LICENSE](LICENSE) file for the full text of the license.
 
 ### Contact
-For any questions, suggestions, or feedback, please feel free to contact the repository owner. Your input is highly valued and contributes to the continuous improvement of this repository as a valuable resource for the numerical mathematics community.
+For any questions, suggestions, or feedback, please feel free to contact me. Your input is highly valued and contributes to the continuous improvement of this repository as a valuable resource for the numerical mathematics community.
