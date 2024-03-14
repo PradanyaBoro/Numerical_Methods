@@ -34,5 +34,4 @@ xlim([0 10])
 xlabel('x-axis');
 ylabel('y-axis');
 
-% Change legend
 legend({'Second-order Taylor series', 'ODE45'})
