@@ -42,6 +42,9 @@ fprintf("y(%f) = %f \n x(%f) = %f", t(end), y(end), t(end), x(end));
 plot(t, x, '-ok')
 hold on;
 plot(t, y, '-or')
+hold on;
+
+% Plot using ODE45 for comparison
 xlim([0 20]);
 xlabel('t');
 ylabel('Values');

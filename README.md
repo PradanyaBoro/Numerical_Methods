@@ -15,7 +15,7 @@ This repository is organized as follows:
 
 - **Examples**: Includes example problems solved using the implemented methods. These examples demonstrate the practical application of numerical methods to solve real-world problems encountered in scientific and engineering domains.
 
-- **References**: Contains a curated list of reference materials, including textbooks, research papers, and online resources, used for understanding and implementing the numerical methods.
+- **References**: Contains a curated list of reference materials, including textbooks, research papers and online resources, used for understanding and implementing the numerical methods.
 
 ### References
 Below are the reference books used for understanding and implementing the numerical methods:
