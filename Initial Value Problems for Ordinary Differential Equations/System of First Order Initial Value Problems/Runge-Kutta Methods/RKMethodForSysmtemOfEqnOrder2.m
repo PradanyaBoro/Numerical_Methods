@@ -45,6 +45,6 @@ xlabel('x-axis');
 ylabel('y-axis');
 zlabel('z-axis');
 title('Lorenz system using Second Order Runge-Kutta Method');
-view(21, 12);
+view(21, 12);    % Fix view of the 3d plot
 box on;
 grid on;
