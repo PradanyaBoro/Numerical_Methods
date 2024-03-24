@@ -15,7 +15,7 @@ while true
     x1 = x0 - (f_val / diff_f);
     
     % Check for convergence
-    if abs(x1 - x0) < 1e-6
+    if abs(x1 - x0) < (10 ^ (-6))
         break;
     end
     
