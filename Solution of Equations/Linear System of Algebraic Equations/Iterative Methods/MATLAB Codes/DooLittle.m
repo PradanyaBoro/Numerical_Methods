@@ -39,5 +39,4 @@ end
 % Solving the system of equations
 sol = U^(-1)*L^(-1)*B;
 
-% Displaying the solution
 fprintf('Required solution is (%f,%f,%f) \n', sol)
