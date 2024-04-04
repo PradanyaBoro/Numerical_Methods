@@ -22,4 +22,4 @@ while true
     x0 = x1;
 end
 
-fprintf("Root is %f \n", x1)
+fprintf("Root is %f \n", x1);
