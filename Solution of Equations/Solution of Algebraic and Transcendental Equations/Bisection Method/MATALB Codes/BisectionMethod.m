@@ -1,5 +1,5 @@
 % Define the function f(x) to be solved using a function handle
-f = @(x) sin(x) + x.^2 - 1;
+f = @(x) sin(x) + x^2 - 1;
 
 % Define the initial interval [a, b]
 a = 0;
