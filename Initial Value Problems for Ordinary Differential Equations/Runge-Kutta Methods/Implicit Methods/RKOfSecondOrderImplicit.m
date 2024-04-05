@@ -10,13 +10,13 @@ f = @(x, y) y^2 - x;
 y(1) = 1;
 x(1) = 0;
 h = 0.02; % Step size
-n = (1 - x(1)) / h; % Number of steps
+n = (1 - x(1)) / h + 1; % Number of mesh divisors
 
 % Initialize k for the Runge-Kutta method
 k = h * f(x(1) + h / 2, y(1) + k / 2);
 
 % Main loop for the implicit second-order Runge-Kutta method
-for i = 1:n
+for i = 1:n - 1
     % Define the implicit equation for z using the Runge-Kutta method
     F = z - 0.02 * ((y(i) + z / 2)^2 - (x(i) + 0.02 / 2));
     
