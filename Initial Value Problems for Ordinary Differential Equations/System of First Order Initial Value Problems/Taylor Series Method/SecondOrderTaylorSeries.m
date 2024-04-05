@@ -48,5 +48,4 @@ plot(t, y, 'b', 'LineWidth', 2)
 hold on
 plot(t, x, 'g', 'LineWidth', 2)
 
-% Change legend to a more suitable one
 legend({'x (Taylor)', 'y (Taylor)', 'x (ODE45)', 'y (ODE45)'}, 'Location', 'southeast');
