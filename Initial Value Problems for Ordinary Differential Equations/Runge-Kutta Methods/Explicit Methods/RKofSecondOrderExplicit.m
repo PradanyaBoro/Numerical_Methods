@@ -34,5 +34,4 @@ y0 = 1;
 [x, y] = ode45(@(x, y) -2 * x * y, xspan, y0);
 plot(x, y, 'r')
 
-% Add compact and descriptive legend to the plot
 legend({'Explicit R-K Method (2nd order)', 'Exact Solution'})
