@@ -21,4 +21,5 @@ while error > 10^(-6)
 end
 
 % Print the solution
-fprintf("Solution is (%f, %f, %f)\n", x(1), x(2), x(3));
+fprintf("Solution is \n");
+disp(x);
