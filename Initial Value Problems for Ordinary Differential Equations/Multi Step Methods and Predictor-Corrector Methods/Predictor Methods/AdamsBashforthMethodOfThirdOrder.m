@@ -14,7 +14,7 @@ y(1) = 1;
 h = 0.01;
 
 % Number of iterations
-n = 1 / h;
+n = 1 / h + 1;
 
 % Perform the first two iterations using forward Euler method
 for i = 1:2
@@ -23,7 +23,7 @@ for i = 1:2
 end
 
 % Perform the remaining iterations using the 3rd order Adams-Bashforth method
-for i = 3:n
+for i = 3:n - 1
     % 3rd order Adams-Bashforth formula
     y(i + 1) = y(i) + (h / 12) * (23 * f(x(i), y(i)) - 16 * f(x(i - 1), y(i - 1)) + 5 * f(x(i - 2), y(i - 2)));
     x(i + 1) = x(i) + h;
