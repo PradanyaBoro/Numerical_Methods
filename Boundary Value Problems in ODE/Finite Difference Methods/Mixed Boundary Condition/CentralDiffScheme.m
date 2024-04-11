@@ -45,7 +45,7 @@ end
 y_sol = A\B;
 
 % Concatenate the solution with the boundary value at b
-y = [y_sol.', y_b];
+y = [y_sol.', y_b]; % .' operator is used to get the transpose
 
 % Plot the solution
 plot(x, y, '--b');
