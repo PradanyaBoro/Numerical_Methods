@@ -14,7 +14,7 @@ while error > 10^(-6)
     % Iterate over each row of the matrix A
     for j = 1:length(x)
         % Update the j-th component of the solution vector x using the previous iteration's values
-        x(j) = (B(j) - sum(A(j,:)*x_old) + A(j,j)*x_old(j)) / A(j,j);
+        x(j) = (B(j) - sum(A(j, :)*x_old) + A(j, j)*x_old(j)) / A(j, j);
     end
 
     % Calculate the error as the absolute difference between the old and new solution vectors
