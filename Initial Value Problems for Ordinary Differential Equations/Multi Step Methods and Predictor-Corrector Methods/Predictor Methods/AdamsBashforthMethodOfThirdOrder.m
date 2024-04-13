@@ -42,7 +42,7 @@ y0 = 1;
 [x, y] = ode45(@(x, y) 1 + (x - y)^2, xspan, y0);
 
 % Plot the results of ODE45
-plot(x, y, 'r')
+plot(x, y, '-r')
 
 % Add legend to the plot
 legend({'Adams-Bashforth Method (3rd order)', 'ODE45 Solution'})
