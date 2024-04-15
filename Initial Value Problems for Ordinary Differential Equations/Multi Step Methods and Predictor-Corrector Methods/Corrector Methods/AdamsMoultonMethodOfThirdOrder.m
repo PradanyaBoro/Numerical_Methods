@@ -35,6 +35,7 @@ for i = 3:n
         f_y1 = f(x(i + 1), y1);
         error = abs(f_y1 - f_y0);
         f_y0 = f_y1;
+        y0 = y1;
     end
     y(i + 1) = y1;
 end
