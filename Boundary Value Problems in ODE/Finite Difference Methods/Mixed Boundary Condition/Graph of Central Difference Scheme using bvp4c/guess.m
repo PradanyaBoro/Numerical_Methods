@@ -1,3 +1,3 @@
-function guess = guess(x)
-    guess = [sin(pi*x); pi*cos(pi*x)];
+function res = guess(x)
+    res = [sin(pi*x); pi*cos(pi*x)];
 end
