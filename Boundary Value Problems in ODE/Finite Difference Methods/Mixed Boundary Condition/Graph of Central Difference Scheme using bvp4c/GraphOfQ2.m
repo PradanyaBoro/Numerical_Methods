@@ -7,6 +7,6 @@ sol = bvp4c(@bvpfcn, @bvpbc, solinit);
 
 % Plot the solution
 plot(sol.x, sol.y(1,:), '--b');
-xlabel('x');
-ylabel('y');
+xlabel('x-axis');
+ylabel('y-axis');
 title('Numerical Solution of y'''' = xy + 1');
