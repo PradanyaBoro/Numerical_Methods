@@ -27,6 +27,6 @@ for i = 2:length(B)
 end
 
 % Solving the system of equations
-sol = U^(-1)*L^(-1)*B;
+sol = U\(L\B);
 
 fprintf('Required solution is (%f,%f,%f) \n', sol)
