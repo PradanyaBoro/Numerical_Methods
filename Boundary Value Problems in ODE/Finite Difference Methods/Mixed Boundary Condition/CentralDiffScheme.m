@@ -1,5 +1,6 @@
 clear
 close all
+clc
 
 a = 0; % Start of the interval
 b = 1; % End of the interval
