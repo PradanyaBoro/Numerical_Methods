@@ -1,7 +1,7 @@
 clear
 close all
 
-syms z k
+syms z
 
 % Define the differential equation y' = f(x, y) as an anonymous function
 f = @(x, y) y^2 - x;
@@ -11,8 +11,6 @@ y(1) = 1;
 x(1) = 0;
 h = 0.02; % Step size
 n = (1 - x(1)) / h + 1; % Number of mesh divisors
-
-% Initialize k for the Runge-Kutta method
 
 % Main loop for the implicit second-order Runge-Kutta method
 for i = 1:n - 1
