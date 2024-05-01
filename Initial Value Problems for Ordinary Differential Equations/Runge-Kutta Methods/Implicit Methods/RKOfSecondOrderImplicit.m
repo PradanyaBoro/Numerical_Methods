@@ -13,7 +13,6 @@ h = 0.02; % Step size
 n = (1 - x(1)) / h + 1; % Number of mesh divisors
 
 % Initialize k for the Runge-Kutta method
-k = h * f(x(1) + h / 2, y(1) + k / 2);
 
 % Main loop for the implicit second-order Runge-Kutta method
 for i = 1:n - 1
